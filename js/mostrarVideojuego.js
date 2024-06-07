@@ -16,7 +16,7 @@ export default function construyeCard(titulo, descripcion, precio, imagen) {
             <p>Precio: $${precio}</p>
         </div>`
     video.addEventListener('click', () => {
-        window.open(`detalles-productos.html?titulo=${encodeURIComponent(titulo)}&descripcion=${encodeURIComponent(descripcion)}&precio=${encodeURIComponent(precio)}&imagen=${encodeURIComponent(imagen)}`, '_blank');
+        window.open(`detalles-productos.html?titulo=${encodeURIComponent(titulo)}&descripcion=${encodeURIComponent(descripcion)}&precio=${encodeURIComponent(precio)}&imagen=${encodeURIComponent(imagen)}`);
     });
 
     return video;

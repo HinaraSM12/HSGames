@@ -3,7 +3,7 @@
         {
             "id": 1,
             "titulo": "The Legend of Zelda: Breath of the Wild",
-            "precio": 100,
+            "precio": 59.99,
             "descripcion": "Explora el vasto mundo de Hyrule y descubre sus secretos.",
             "imagen": "https://zelda.nintendo.com/breath-of-the-wild/assets/media/wallpapers/tablet-1.jpg",
             "plataforma": "Nintendo Switch"
@@ -11,7 +11,7 @@
         {
             "id": 2,
             "titulo": "Red Dead Redemption 2",
-            "precio": 100,
+            "precio": 39.99,
             "descripcion": "Vive la vida de un forajido en el salvaje oeste.",
             "imagen": "https://i.blogs.es/juegos/13424/red_dead_3__nombre_temporal_/fotos/maestras/red_dead_3__nombre_temporal_-4030936.jpg",
             "plataforma": "PlayStation 4, Xbox One"
@@ -19,7 +19,7 @@
         {
             "id": 3,
             "titulo": "The Last of Us Part II",
-            "precio": 100,
+            "precio": 29.99,
             "descripcion": "Sobrevive en un mundo postapocalíptico infestado de seres mutantes.",
             "imagen": "https://www.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2020/01/last-us-parte-ii-1853371.jpg",
             "plataforma": "PlayStation 4"
@@ -27,23 +27,23 @@
         {
             "id": 4,
             "titulo": "Super Mario Odyssey",
-            "precio": 100,
+            "precio": 49.99,
             "descripcion": "Únete a Mario en una emocionante aventura por diferentes reinos.",
             "imagen": "https://metodologic.net/wp-content/uploads/2017/11/Mario_Odyssey_portada.jpg",
             "plataforma": "Nintendo Switch"
         },
         {
             "id": 5,
-            "titulo": "Fortnite",
-            "precio": 100,
-            "descripcion": "Participa en batallas épicas en un mundo abierto.",
-            "imagen": "https://i.pinimg.com/originals/8c/e8/ab/8ce8aba0edcb78be32945243a3d9b4e6.jpg",
-            "plataforma": "Multiplataforma"
+            "titulo": "Cyberpunk 2077",
+            "precio": 49.99,
+            "descripcion": "Explora un mundo abierto futurista en Night City.",
+            "imagen": "https://zurpusiangames.com/img/cyberpunk_2077.jpg",
+            "plataforma": "PlayStation 4, Xbox One, PC"
         },
         {
             "id": 6,
             "titulo": "Minecraft",
-            "precio": 100,
+            "precio": 26.95,
             "descripcion": "Construye tu propio mundo y explora infinitas posibilidades.",
             "imagen": "https://i.pinimg.com/originals/1b/9f/77/1b9f772d10ae2cfce18fab1b05705810.png",
             "plataforma": "Multiplataforma"
@@ -51,10 +51,18 @@
         {
             "id": 7,
             "titulo": "Grand Theft Auto V",
-            "precio": 120,
+            "precio": 29.99,
             "descripcion": "Vive una vida de crimen en Los Santos.",
             "imagen": "https://media-rockstargames-com.akamaized.net/tina-uploads/posts/9k922a7212kao3/59a05cd4bc90a814ee52dceb30d70de2c1946953.jpg",
             "plataforma": "Multiplataforma"
+        },
+        {
+            "id": 8,
+            "titulo": "God of War",
+            "precio": 19.99,
+            "descripcion": "Acompaña a Kratos y Atreus en su viaje a través de la mitología nórdica.",
+            "imagen": "https://uvejuegos.com/img/caratulas/67097/godofwar.jpg",
+            "plataforma": "PlayStation 4"
         }
     ]
 }
