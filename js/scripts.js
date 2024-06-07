@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             text: "Nuevos productos disponibles",
             subtext: "Explora nuestra nueva colección.",
-            image: "/img/gtav.jpg"
+            image: "https://i0.wp.com/www.gamerfocus.co/wp-content/uploads/2019/09/Banner-facebook030919.jpg"
         },
         {
             text: "Ofertas de verano",

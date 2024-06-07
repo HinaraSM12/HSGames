@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AluraGeek E-commerce</title>
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/flexbox.css">
     <!--<link rel="stylesheet" href="./css/reset.css">-->
 </head>
 <body>
@@ -28,21 +29,25 @@
         </ul>
     </nav>
 
-    <section id="banner">
-        <div class="banner-content">
-            <h2>¡Aprovecha nuestras ofertas exclusivas!</h2>
-            <p>Descuentos de hasta el 50% en productos seleccionados.</p>
-            <button onclick="window.location.href='offers.html'">Ver Ofertas</button>
-        </div>
-    </section>
-    
+    <div class="container-all">
+        <section id="banner">
+            <div class="banner-content">
+                <h2>¡Aprovecha nuestras ofertas exclusivas!</h2>
+                <p>Descuentos de hasta el 50% en productos seleccionados.</p>
+                <button onclick="window.location.href='offers.html'">Ver Ofertas</button>
+            </div>
+        </section>
+        
 
-    <section id="product-gallery">
-        <h2>Productos Destacados</h2>
-        <div class="gallery">
-            <!-- Aquí se agregarán dinámicamente los productos -->
-        </div>
-    </section>
+        <section id="product-gallery">
+            <h2>Productos Destacados</h2>
+            <div class="gallery">
+                <ul class="product-grid" data-lista>
+                    <!-- Los elementos de productos se generarán aquí -->
+                </ul>
+            </div>
+        </section>
+    </div>
 
     <footer>
         <div class="container">
@@ -67,5 +72,7 @@
             </div>
         </div>
     </footer>
+    <script src="./js/mostrarVideojuego.js" type="module"></script>
+    <script src="./js/buscarVideojuego.js" type="module"></script>
     <script src="./js/scripts.js"></script>
 </body>

@@ -6,9 +6,18 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Hinara Pastora Sanchez Mata",
   "license": "ISC",
   "dependencies": {
     "json-server": "^1.0.0-beta.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "hsgames"
+  },
+  "keywords": [
+    "Tienda",
+    "de",
+    "videojuegos"
+  ]
 }
