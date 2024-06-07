@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AluraGeek E-commerce</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <!--<link rel="stylesheet" href="./css/reset.css">-->
+</head>
+<body>
+    <header id="header">
+        <div class="logo-container">
+            <a href="index.html"><img class="logo" src="img/logo.png"></a>
+            <!--<h1>HSGames</h1>-->
+        </div>
+        <div class="container">
+            <input type="text" placeholder="Buscar productos..." id="search-bar">
+            <button id="search-button">Buscar</button>
+        </div>
+    </header>
+
+    <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link" href="login.html">Login</a></li>
+          <li><a class="nav-link" href="crear-cuenta.html">Crea tu cuenta</a></li>
+          <li><a class="nav-link" href="#mis-compras">Mis compras</a></li>
+          <li><a class="nav-link" href="#carrito">Carrito</a></li>
+        </ul>
+    </nav>
+
+    <section id="banner">
+        <div class="banner-content">
+            <h2>¡Aprovecha nuestras ofertas exclusivas!</h2>
+            <p>Descuentos de hasta el 50% en productos seleccionados.</p>
+            <button onclick="window.location.href='offers.html'">Ver Ofertas</button>
+        </div>
+    </section>
+    
+
+    <section id="product-gallery">
+        <h2>Productos Destacados</h2>
+        <div class="gallery">
+            <!-- Aquí se agregarán dinámicamente los productos -->
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <img src="img/logo.png"> 
+            <nav id="navbar" class="navbar">
+                <ul>
+                  <li><a class="nav-link" href="#quienes-somos">Quienes somos</a></li>
+                  <li><a class="nav-link" href="#politica">Política de privacidad</a></li>
+                  <li><a class="nav-link" href="#nuestras-tiendas">Nuestras tiendas</a></li>
+                  <li><a class="nav-link" href="#fidelidad">Programa de fidelidad</a></li>
+                </ul>
+            </nav>
+            <form id="contact-form">
+                <h3>Hable con nosotros</h3>
+                <input type="text" placeholder="Nombre" required>
+                <input type="email" placeholder="Correo Electrónico" required>
+                <textarea placeholder="Mensaje" required></textarea>
+                <button type="submit">Enviar mensaje</button>
+            </form>
+            <div class="footer-info">
+                <p>&copy; 2024 HSGames. Desarrollado por Hinara Sánchez. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/scripts.js"></script>
+</body>

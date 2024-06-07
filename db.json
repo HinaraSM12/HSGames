@@ -1,0 +1,46 @@
+{
+    "videojuegos": [
+        {
+            "id": 1,
+            "titulo": "The Legend of Zelda: Breath of the Wild",
+            "descripcion": "Explora el vasto mundo de Hyrule y descubre sus secretos.",
+            "imagen": "https://example.com/zelda.png",
+            "plataforma": "Nintendo Switch"
+        },
+        {
+            "id": 2,
+            "titulo": "Red Dead Redemption 2",
+            "descripcion": "Vive la vida de un forajido en el salvaje oeste.",
+            "imagen": "https://example.com/reddead.png",
+            "plataforma": "PlayStation 4, Xbox One"
+        },
+        {
+            "id": 3,
+            "titulo": "The Last of Us Part II",
+            "descripcion": "Sobrevive en un mundo postapocalíptico infestado de seres mutantes.",
+            "imagen": "https://example.com/lastofus.png",
+            "plataforma": "PlayStation 4"
+        },
+        {
+            "id": 4,
+            "titulo": "Super Mario Odyssey",
+            "descripcion": "Únete a Mario en una emocionante aventura por diferentes reinos.",
+            "imagen": "https://example.com/mario.png",
+            "plataforma": "Nintendo Switch"
+        },
+        {
+            "id": 5,
+            "titulo": "Fortnite",
+            "descripcion": "Participa en batallas épicas en un mundo abierto.",
+            "imagen": "https://example.com/fortnite.png",
+            "plataforma": "Multiplataforma"
+        },
+        {
+            "id": 6,
+            "titulo": "Minecraft",
+            "descripcion": "Construye tu propio mundo y explora infinitas posibilidades.",
+            "imagen": "https://example.com/minecraft.png",
+            "plataforma": "Multiplataforma"
+        }
+    ]
+}
