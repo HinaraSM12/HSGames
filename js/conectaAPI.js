@@ -1,5 +1,5 @@
 async function listaVideojuego(){
-    const conexion = await fetch("http://localhost:3001/videojuegos",{
+    const conexion = await fetch("http://localhost:3001/Videojuegos",{
         method:"GET",
         headers:{
         "Content-type":"application/json"
@@ -13,7 +13,7 @@ async function listaVideojuego(){
 }
 
 async function crearVideojuego(titulo,precio,descripcion,imagen){
-    const conexion= await fetch("http://localhost:3001/videojuegos",{
+    const conexion= await fetch("http://localhost:3001/Videojuegos",{
     method:"POST",
     headers:{
         "Content-type":"application/json"

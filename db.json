@@ -1,5 +1,5 @@
 {
-    "videojuegos": [
+    "Videojuegos": [
         {
             "id": 1,
             "titulo": "The Legend of Zelda: Breath of the Wild",
@@ -64,5 +64,131 @@
             "imagen": "https://uvejuegos.com/img/caratulas/67097/godofwar.jpg",
             "plataforma": "PlayStation 4"
         }
+    ],
+
+    "Consolas": [
+        {
+            "id": 1,
+            "titulo": "PlayStation 5",
+            "fabricante": "Sony",
+            "precio": 499.99,
+            "descripcion": "La última consola de Sony con gráficos impresionantes y juegos exclusivos.",
+            "imagen": "https://images-na.ssl-images-amazon.com/images/I/619BkvKW35L._AC_SL1500_.jpg"
+        },
+        {
+            "id": 2,
+            "titulo": "Xbox Series X",
+            "fabricante": "Microsoft",
+            "precio": 499.99,
+            "descripcion": "La consola más potente de Microsoft con soporte para juegos 4K.",
+            "imagen": "https://assets.xboxservices.com/assets/fb/d2/fbd2cb56-5c25-414d-9f46-e6a164cdf5be.png?n=XBX_A-BuyBoxBGImage01-D.png"
+        },
+        {
+            "id": 3,
+            "titulo": "Nintendo Switch",
+            "fabricante": "Nintendo",
+            "precio": 299.99,
+            "descripcion": "Consola híbrida que se puede usar tanto en modo portátil como en modo de sobremesa.",
+            "imagen": "https://images-na.ssl-images-amazon.com/images/I/61-PblYntsL._AC_SL1500_.jpg"
+        },
+        {
+            "id": 4,
+            "titulo": "PlayStation 4",
+            "fabricante": "Sony",
+            "precio": 299.99,
+            "descripcion": "La consola anterior de Sony con una amplia biblioteca de juegos.",
+            "imagen": "https://tumejoroferta.com/wp-content/uploads/2023/04/original_17215.jpg"
+        },
+        {
+            "id": 5,
+            "titulo": "Xbox One",
+            "fabricante": "Microsoft",
+            "precio": 299.99,
+            "descripcion": "La consola anterior de Microsoft con una gran selección de juegos.",
+            "imagen": "https://exitocol.vtexassets.com/arquivos/ids/21272061/consola-xbox-one-s-1tb-1003291541.jpg"
+        },
+        {
+            "id": 6,
+            "titulo": "Nintendo 3DS",
+            "fabricante": "Nintendo",
+            "precio": 199.99,
+            "descripcion": "Consola portátil con capacidad para mostrar imágenes en 3D sin necesidad de gafas especiales.",
+            "imagen": "https://www.nintendo.com/eu/media/images/10_share_images/systems_11/nintendo_3ds_28/H2x1_generic_3DS.jpg"
+        },
+        {
+            "id": 7,
+            "titulo": "PlayStation Vita",
+            "fabricante": "Sony",
+            "precio": 149.99,
+            "descripcion": "Consola portátil con pantalla táctil y capacidad de conexión a internet.",
+            "imagen": "https://images-na.ssl-images-amazon.com/images/I/81ocPLCedaL._AC_SL1500_.jpg"
+        },
+        {
+            "id": 8,
+            "titulo": "Nintendo Wii U",
+            "fabricante": "Nintendo",
+            "precio": 299.99,
+            "descripcion": "Consola con un controlador con pantalla táctil y capacidad para jugar en línea.",
+            "imagen": "https://images-na.ssl-images-amazon.com/images/I/41GQwMeXJxL._AC_UL600_SR600,600_.jpg"
+        },
+        {
+            "id": 9,
+            "titulo": "Xbox 360",
+            "fabricante": "Microsoft",
+            "precio": 199.99,
+            "descripcion": "Consola de la generación anterior de Microsoft con una amplia biblioteca de juegos.",
+            "imagen": "https://m.media-amazon.com/images/I/61oFqsoj9nL.jpg"
+        },
+        {
+            "id": 10,
+            "nombre": "PlayStation 3",
+            "fabricante": "Sony",
+            "precio": 199.99,
+            "descripcion": "Consola de la generación anterior de Sony con soporte para juegos en línea.",
+            "imagen": "https://i.ebayimg.com/thumbs/images/g/Y9kAAOSw2KVlJpwa/s-l1200.jpg"
+        },
+        {
+            "id": 11,
+            "titulo": "Nintendo DS",
+            "fabricante": "Nintendo",
+            "precio": 149.99,
+            "descripcion": "Consola portátil con pantalla táctil y capacidad para jugar en línea.",
+            "imagen": "https://www.nintenderos.com/wp-content/uploads/2011/06/Nintendo-DS-Lite.jpg"
+        },
+        {
+            "id": 12,
+            "titulo": "Xbox",
+            "fabricante": "Microsoft",
+            "precio": 299.99,
+            "descripcion": "La primera consola de Microsoft con una amplia biblioteca de juegos.",
+            "imagen": "https://www.lifewire.com/thmb/wopIeO2qWXu_54rpyw6BS-LpRGc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/x-box-731a722dbdca4e86919196e580b9385e.jpg"
+        },
+        {
+            "id": 13,
+            "titulo": "PlayStation 2",
+            "fabricante": "Sony",
+            "precio": 149.99,
+            "descripcion": "La consola más vendida de la historia con una amplia biblioteca de juegos.",
+            "imagen": "https://m.media-amazon.com/images/I/61pETE6v4vL.jpg"
+        },
+        {
+            "id": 14,
+            "titulo": "Nintendo GameCube",
+            "fabricante": "Nintendo",
+            "precio": 99.99,
+            "descripcion": "Consola con un diseño único y una gran selección de juegos exclusivos.",
+            "imagen": "https://upload.wikimedia.org/wikipedia/commons/2/2b/GameCube-Console-Set.png"
+        },
+        {
+            "id": 15,
+            "titulo": "Sega Dreamcast",
+            "fabricante": "Sega",
+            "precio": 199.99,
+            "descripcion": "Consola adelantada a su tiempo con gráficos impresionantes y juegos innovadores.",
+            "imagen": "https://i5.walmartimages.com/seo/Pre-Owned-Sega-Dreamcast-Video-Game-Console-with-Matching-Controller-White-and-Cables_f5004c31-4e29-4b12-a1b7-903473c02602_1.be90151d8a27783df97a56f6b010fb00.jpeg"
+        }
     ]
 }
+
+
+
