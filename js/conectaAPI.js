@@ -33,13 +33,13 @@ async function crearVideojuego(titulo,precio,descripcion,imagen){
     return conexionConvertida;
 }
 
-async function buscarVideojuego(referencia){
-    const conexion=await fetch(`http://localhost:3001/videojuego?q=${referencia}`)
+async function buscarVideojuegos(referencia){
+    const conexion=await fetch(`http://localhost:3001/Videojuegos?q=${referencia}`)
     const conexionConvertida=conexion.json();
 
     return conexionConvertida;
 }
 
 export const conectaAPI={
-    listaVideojuego,crearVideojuego,buscarVideojuego
+    listaVideojuego,crearVideojuego,buscarVideojuegos
 }
