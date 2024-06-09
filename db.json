@@ -1,194 +1,289 @@
 {
-    "Videojuegos": [
-        {
-            "id": 1,
-            "titulo": "The Legend of Zelda: Breath of the Wild",
-            "precio": 59.99,
-            "descripcion": "Explora el vasto mundo de Hyrule y descubre sus secretos.",
-            "imagen": "https://zelda.nintendo.com/breath-of-the-wild/assets/media/wallpapers/tablet-1.jpg",
-            "plataforma": "Nintendo Switch"
-        },
-        {
-            "id": 2,
-            "titulo": "Red Dead Redemption 2",
-            "precio": 39.99,
-            "descripcion": "Vive la vida de un forajido en el salvaje oeste.",
-            "imagen": "https://i.blogs.es/juegos/13424/red_dead_3__nombre_temporal_/fotos/maestras/red_dead_3__nombre_temporal_-4030936.jpg",
-            "plataforma": "PlayStation 4, Xbox One"
-        },
-        {
-            "id": 3,
-            "titulo": "The Last of Us Part II",
-            "precio": 29.99,
-            "descripcion": "Sobrevive en un mundo postapocalíptico infestado de seres mutantes.",
-            "imagen": "https://www.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2020/01/last-us-parte-ii-1853371.jpg",
-            "plataforma": "PlayStation 4"
-        },
-        {
-            "id": 4,
-            "titulo": "Super Mario Odyssey",
-            "precio": 49.99,
-            "descripcion": "Únete a Mario en una emocionante aventura por diferentes reinos.",
-            "imagen": "https://metodologic.net/wp-content/uploads/2017/11/Mario_Odyssey_portada.jpg",
-            "plataforma": "Nintendo Switch"
-        },
-        {
-            "id": 5,
-            "titulo": "Cyberpunk 2077",
-            "precio": 49.99,
-            "descripcion": "Explora un mundo abierto futurista en Night City.",
-            "imagen": "https://zurpusiangames.com/img/cyberpunk_2077.jpg",
-            "plataforma": "PlayStation 4, Xbox One, PC"
-        },
-        {
-            "id": 6,
-            "titulo": "Minecraft",
-            "precio": 26.95,
-            "descripcion": "Construye tu propio mundo y explora infinitas posibilidades.",
-            "imagen": "https://i.pinimg.com/originals/1b/9f/77/1b9f772d10ae2cfce18fab1b05705810.png",
-            "plataforma": "Multiplataforma"
-        },
-        {
-            "id": 7,
-            "titulo": "Grand Theft Auto V",
-            "precio": 29.99,
-            "descripcion": "Vive una vida de crimen en Los Santos.",
-            "imagen": "https://media-rockstargames-com.akamaized.net/tina-uploads/posts/9k922a7212kao3/59a05cd4bc90a814ee52dceb30d70de2c1946953.jpg",
-            "plataforma": "Multiplataforma"
-        },
-        {
-            "id": 8,
-            "titulo": "God of War",
-            "precio": 19.99,
-            "descripcion": "Acompaña a Kratos y Atreus en su viaje a través de la mitología nórdica.",
-            "imagen": "https://uvejuegos.com/img/caratulas/67097/godofwar.jpg",
-            "plataforma": "PlayStation 4"
-        }
-    ],
-
-    "Consolas": [
-        {
-            "id": 1,
-            "titulo": "PlayStation 5",
-            "fabricante": "Sony",
-            "precio": 499.99,
-            "descripcion": "La última consola de Sony con gráficos impresionantes y juegos exclusivos.",
-            "imagen": "https://images-na.ssl-images-amazon.com/images/I/619BkvKW35L._AC_SL1500_.jpg"
-        },
-        {
-            "id": 2,
-            "titulo": "Xbox Series X",
-            "fabricante": "Microsoft",
-            "precio": 499.99,
-            "descripcion": "La consola más potente de Microsoft con soporte para juegos 4K.",
-            "imagen": "https://assets.xboxservices.com/assets/fb/d2/fbd2cb56-5c25-414d-9f46-e6a164cdf5be.png?n=XBX_A-BuyBoxBGImage01-D.png"
-        },
-        {
-            "id": 3,
-            "titulo": "Nintendo Switch",
-            "fabricante": "Nintendo",
-            "precio": 299.99,
-            "descripcion": "Consola híbrida que se puede usar tanto en modo portátil como en modo de sobremesa.",
-            "imagen": "https://images-na.ssl-images-amazon.com/images/I/61-PblYntsL._AC_SL1500_.jpg"
-        },
-        {
-            "id": 4,
-            "titulo": "PlayStation 4",
-            "fabricante": "Sony",
-            "precio": 299.99,
-            "descripcion": "La consola anterior de Sony con una amplia biblioteca de juegos.",
-            "imagen": "https://tumejoroferta.com/wp-content/uploads/2023/04/original_17215.jpg"
-        },
-        {
-            "id": 5,
-            "titulo": "Xbox One",
-            "fabricante": "Microsoft",
-            "precio": 299.99,
-            "descripcion": "La consola anterior de Microsoft con una gran selección de juegos.",
-            "imagen": "https://exitocol.vtexassets.com/arquivos/ids/21272061/consola-xbox-one-s-1tb-1003291541.jpg"
-        },
-        {
-            "id": 6,
-            "titulo": "Nintendo 3DS",
-            "fabricante": "Nintendo",
-            "precio": 199.99,
-            "descripcion": "Consola portátil con capacidad para mostrar imágenes en 3D sin necesidad de gafas especiales.",
-            "imagen": "https://www.nintendo.com/eu/media/images/10_share_images/systems_11/nintendo_3ds_28/H2x1_generic_3DS.jpg"
-        },
-        {
-            "id": 7,
-            "titulo": "PlayStation Vita",
-            "fabricante": "Sony",
-            "precio": 149.99,
-            "descripcion": "Consola portátil con pantalla táctil y capacidad de conexión a internet.",
-            "imagen": "https://images-na.ssl-images-amazon.com/images/I/81ocPLCedaL._AC_SL1500_.jpg"
-        },
-        {
-            "id": 8,
-            "titulo": "Nintendo Wii U",
-            "fabricante": "Nintendo",
-            "precio": 299.99,
-            "descripcion": "Consola con un controlador con pantalla táctil y capacidad para jugar en línea.",
-            "imagen": "https://images-na.ssl-images-amazon.com/images/I/41GQwMeXJxL._AC_UL600_SR600,600_.jpg"
-        },
-        {
-            "id": 9,
-            "titulo": "Xbox 360",
-            "fabricante": "Microsoft",
-            "precio": 199.99,
-            "descripcion": "Consola de la generación anterior de Microsoft con una amplia biblioteca de juegos.",
-            "imagen": "https://m.media-amazon.com/images/I/61oFqsoj9nL.jpg"
-        },
-        {
-            "id": 10,
-            "nombre": "PlayStation 3",
-            "fabricante": "Sony",
-            "precio": 199.99,
-            "descripcion": "Consola de la generación anterior de Sony con soporte para juegos en línea.",
-            "imagen": "https://i.ebayimg.com/thumbs/images/g/Y9kAAOSw2KVlJpwa/s-l1200.jpg"
-        },
-        {
-            "id": 11,
-            "titulo": "Nintendo DS",
-            "fabricante": "Nintendo",
-            "precio": 149.99,
-            "descripcion": "Consola portátil con pantalla táctil y capacidad para jugar en línea.",
-            "imagen": "https://www.nintenderos.com/wp-content/uploads/2011/06/Nintendo-DS-Lite.jpg"
-        },
-        {
-            "id": 12,
-            "titulo": "Xbox",
-            "fabricante": "Microsoft",
-            "precio": 299.99,
-            "descripcion": "La primera consola de Microsoft con una amplia biblioteca de juegos.",
-            "imagen": "https://www.lifewire.com/thmb/wopIeO2qWXu_54rpyw6BS-LpRGc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/x-box-731a722dbdca4e86919196e580b9385e.jpg"
-        },
-        {
-            "id": 13,
-            "titulo": "PlayStation 2",
-            "fabricante": "Sony",
-            "precio": 149.99,
-            "descripcion": "La consola más vendida de la historia con una amplia biblioteca de juegos.",
-            "imagen": "https://m.media-amazon.com/images/I/61pETE6v4vL.jpg"
-        },
-        {
-            "id": 14,
-            "titulo": "Nintendo GameCube",
-            "fabricante": "Nintendo",
-            "precio": 99.99,
-            "descripcion": "Consola con un diseño único y una gran selección de juegos exclusivos.",
-            "imagen": "https://upload.wikimedia.org/wikipedia/commons/2/2b/GameCube-Console-Set.png"
-        },
-        {
-            "id": 15,
-            "titulo": "Sega Dreamcast",
-            "fabricante": "Sega",
-            "precio": 199.99,
-            "descripcion": "Consola adelantada a su tiempo con gráficos impresionantes y juegos innovadores.",
-            "imagen": "https://i5.walmartimages.com/seo/Pre-Owned-Sega-Dreamcast-Video-Game-Console-with-Matching-Controller-White-and-Cables_f5004c31-4e29-4b12-a1b7-903473c02602_1.be90151d8a27783df97a56f6b010fb00.jpeg"
-        }
-    ]
+  "Videojuegos": [
+    {
+      "id": "1",
+      "titulo": "The Legend of Zelda: Breath of the Wild",
+      "precio": 59.99,
+      "descripcion": "Explora el vasto mundo de Hyrule y descubre sus secretos.",
+      "imagen": "https://zelda.nintendo.com/breath-of-the-wild/assets/media/wallpapers/tablet-1.jpg",
+      "plataforma": "Nintendo Switch"
+    },
+    {
+      "titulo": "Red Dead Redemption 2",
+      "precio": "39.9",
+      "descripcion": "Vive la vida de un forajido en el salvaje oeste.",
+      "imagen": "https://i.blogs.es/juegos/13424/red_dead_3__nombre_temporal_/fotos/maestras/red_dead_3__nombre_temporal_-4030936.jpg",
+      "id": "2"
+    },
+    {
+      "id": "3",
+      "titulo": "The Last of Us Part II",
+      "precio": 29.99,
+      "descripcion": "Sobrevive en un mundo postapocalíptico infestado de seres mutantes.",
+      "imagen": "https://www.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2020/01/last-us-parte-ii-1853371.jpg",
+      "plataforma": "PlayStation 4"
+    },
+    {
+      "id": "4",
+      "titulo": "Super Mario Odyssey",
+      "precio": 49.99,
+      "descripcion": "Únete a Mario en una emocionante aventura por diferentes reinos.",
+      "imagen": "https://metodologic.net/wp-content/uploads/2017/11/Mario_Odyssey_portada.jpg",
+      "plataforma": "Nintendo Switch"
+    },
+    {
+      "id": "5",
+      "titulo": "Cyberpunk 2077",
+      "precio": 49.99,
+      "descripcion": "Explora un mundo abierto futurista en Night City.",
+      "imagen": "https://zurpusiangames.com/img/cyberpunk_2077.jpg",
+      "plataforma": "PlayStation 4, Xbox One, PC"
+    },
+    {
+      "id": "6",
+      "titulo": "Minecraft",
+      "precio": 26.95,
+      "descripcion": "Construye tu propio mundo y explora infinitas posibilidades.",
+      "imagen": "https://i.pinimg.com/originals/1b/9f/77/1b9f772d10ae2cfce18fab1b05705810.png",
+      "plataforma": "Multiplataforma"
+    },
+    {
+      "id": "7",
+      "titulo": "Grand Theft Auto V",
+      "precio": 29.99,
+      "descripcion": "Vive una vida de crimen en Los Santos.",
+      "imagen": "https://media-rockstargames-com.akamaized.net/tina-uploads/posts/9k922a7212kao3/59a05cd4bc90a814ee52dceb30d70de2c1946953.jpg",
+      "plataforma": "Multiplataforma"
+    },
+    {
+      "id": "8",
+      "titulo": "God of War",
+      "precio": 19.99,
+      "descripcion": "Acompaña a Kratos y Atreus en su viaje a través de la mitología nórdica.",
+      "imagen": "https://uvejuegos.com/img/caratulas/67097/godofwar.jpg",
+      "plataforma": "PlayStation 4"
+    }
+  ],
+  "Consolas": [
+    {
+      "id": "1",
+      "titulo": "PlayStation 5",
+      "fabricante": "Sony",
+      "precio": 499.99,
+      "descripcion": "La última consola de Sony con gráficos impresionantes y juegos exclusivos.",
+      "imagen": "https://images-na.ssl-images-amazon.com/images/I/619BkvKW35L._AC_SL1500_.jpg"
+    },
+    {
+      "id": "2",
+      "titulo": "Xbox Series X",
+      "fabricante": "Microsoft",
+      "precio": 499.99,
+      "descripcion": "La consola más potente de Microsoft con soporte para juegos 4K.",
+      "imagen": "https://assets.xboxservices.com/assets/fb/d2/fbd2cb56-5c25-414d-9f46-e6a164cdf5be.png?n=XBX_A-BuyBoxBGImage01-D.png"
+    },
+    {
+      "id": "3",
+      "titulo": "Nintendo Switch",
+      "fabricante": "Nintendo",
+      "precio": 299.99,
+      "descripcion": "Consola híbrida que se puede usar tanto en modo portátil como en modo de sobremesa.",
+      "imagen": "https://images-na.ssl-images-amazon.com/images/I/61-PblYntsL._AC_SL1500_.jpg"
+    },
+    {
+      "id": "4",
+      "titulo": "PlayStation 4",
+      "fabricante": "Sony",
+      "precio": 299.99,
+      "descripcion": "La consola anterior de Sony con una amplia biblioteca de juegos.",
+      "imagen": "https://tumejoroferta.com/wp-content/uploads/2023/04/original_17215.jpg"
+    },
+    {
+      "id": "5",
+      "titulo": "Xbox One",
+      "fabricante": "Microsoft",
+      "precio": 299.99,
+      "descripcion": "La consola anterior de Microsoft con una gran selección de juegos.",
+      "imagen": "https://exitocol.vtexassets.com/arquivos/ids/21272061/consola-xbox-one-s-1tb-1003291541.jpg"
+    },
+    {
+      "id": "6",
+      "titulo": "Nintendo 3DS",
+      "fabricante": "Nintendo",
+      "precio": 199.99,
+      "descripcion": "Consola portátil con capacidad para mostrar imágenes en 3D sin necesidad de gafas especiales.",
+      "imagen": "https://www.nintendo.com/eu/media/images/10_share_images/systems_11/nintendo_3ds_28/H2x1_generic_3DS.jpg"
+    },
+    {
+      "id": "7",
+      "titulo": "PlayStation Vita",
+      "fabricante": "Sony",
+      "precio": 149.99,
+      "descripcion": "Consola portátil con pantalla táctil y capacidad de conexión a internet.",
+      "imagen": "https://images-na.ssl-images-amazon.com/images/I/81ocPLCedaL._AC_SL1500_.jpg"
+    },
+    {
+      "id": "8",
+      "titulo": "Nintendo Wii U",
+      "fabricante": "Nintendo",
+      "precio": 299.99,
+      "descripcion": "Consola con un controlador con pantalla táctil y capacidad para jugar en línea.",
+      "imagen": "https://images-na.ssl-images-amazon.com/images/I/41GQwMeXJxL._AC_UL600_SR600,600_.jpg"
+    },
+    {
+      "id": "9",
+      "titulo": "Xbox 360",
+      "fabricante": "Microsoft",
+      "precio": 199.99,
+      "descripcion": "Consola de la generación anterior de Microsoft con una amplia biblioteca de juegos.",
+      "imagen": "https://m.media-amazon.com/images/I/61oFqsoj9nL.jpg"
+    },
+    {
+      "id": "10",
+      "nombre": "PlayStation 3",
+      "fabricante": "Sony",
+      "precio": 199.99,
+      "descripcion": "Consola de la generación anterior de Sony con soporte para juegos en línea.",
+      "imagen": "https://i.ebayimg.com/thumbs/images/g/Y9kAAOSw2KVlJpwa/s-l1200.jpg"
+    },
+    {
+      "id": "11",
+      "titulo": "Nintendo DS",
+      "fabricante": "Nintendo",
+      "precio": 149.99,
+      "descripcion": "Consola portátil con pantalla táctil y capacidad para jugar en línea.",
+      "imagen": "https://www.nintenderos.com/wp-content/uploads/2011/06/Nintendo-DS-Lite.jpg"
+    },
+    {
+      "id": "12",
+      "titulo": "Xbox",
+      "fabricante": "Microsoft",
+      "precio": 299.99,
+      "descripcion": "La primera consola de Microsoft con una amplia biblioteca de juegos.",
+      "imagen": "https://www.lifewire.com/thmb/wopIeO2qWXu_54rpyw6BS-LpRGc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/x-box-731a722dbdca4e86919196e580b9385e.jpg"
+    },
+    {
+      "id": "13",
+      "titulo": "PlayStation 2",
+      "fabricante": "Sony",
+      "precio": 149.99,
+      "descripcion": "La consola más vendida de la historia con una amplia biblioteca de juegos.",
+      "imagen": "https://m.media-amazon.com/images/I/61pETE6v4vL.jpg"
+    },
+    {
+      "id": "14",
+      "titulo": "Nintendo GameCube",
+      "fabricante": "Nintendo",
+      "precio": 99.99,
+      "descripcion": "Consola con un diseño único y una gran selección de juegos exclusivos.",
+      "imagen": "https://upload.wikimedia.org/wikipedia/commons/2/2b/GameCube-Console-Set.png"
+    },
+    {
+      "id": "15",
+      "titulo": "Sega Dreamcast",
+      "fabricante": "Sega",
+      "precio": 199.99,
+      "descripcion": "Consola adelantada a su tiempo con gráficos impresionantes y juegos innovadores.",
+      "imagen": "https://i5.walmartimages.com/seo/Pre-Owned-Sega-Dreamcast-Video-Game-Console-with-Matching-Controller-White-and-Cables_f5004c31-4e29-4b12-a1b7-903473c02602_1.be90151d8a27783df97a56f6b010fb00.jpeg"
+    }
+  ],
+  "Variedades": [
+    {
+      "id": "1",
+      "titulo": "Figura de Acción de Mario",
+      "precio": 19.99,
+      "descripcion": "Figura de acción detallada de Mario de la serie Super Mario.",
+      "imagen": "https://m.media-amazon.com/images/I/61Rv8++ma9L._AC_SL1500_.jpg"
+    },
+    {
+      "id": "2",
+      "titulo": "Figura de Acción de Link",
+      "precio": 24.99,
+      "descripcion": "Figura coleccionable de Link de The Legend of Zelda.",
+      "imagen": "https://m.media-amazon.com/images/I/51GQjVa2nDL._AC_SL1200_.jpg"
+    },
+    {
+      "id": "3",
+      "titulo": "Taza de Minecraft",
+      "precio": 14.99,
+      "descripcion": "Taza con diseño de Minecraft para los fans del juego.",
+      "imagen": "https://lamirilla.pe/wp-content/uploads/2023/11/TAZA-MINECRAFT-CREEPER-CUBO-a.png"
+    },
+    {
+      "id": "4",
+      "titulo": "Camiseta de Pac-Man",
+      "precio": 19.99,
+      "descripcion": "Camiseta con diseño clásico de Pac-Man.",
+      "imagen": "https://world.benetton.com/dw/image/v2/BBSF_PRD/on/demandware.static/-/Sites-ucb-master/default/dw21c9fbcd/images/Full_PDP_h/UCB-Bambino_22P_3096C103F_100_FS_Full_PDP_h.jpg",
+      "tallas": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ]
+    },
+    {
+      "id": "5",
+      "titulo": "Llavero de Sonic",
+      "precio": 9.99,
+      "descripcion": "Llavero con la figura de Sonic the Hedgehog.",
+      "imagen": "https://tiendalego.com.co/cdn/shop/products/854239-1_1000x1000.jpg"
+    },
+    {
+      "id": "6",
+      "titulo": "Réplica de la Espada Maestra de Zelda",
+      "precio": 49.99,
+      "descripcion": "Réplica a escala de la Espada Maestra de The Legend of Zelda.",
+      "imagen": "https://images.squarespace-cdn.com/content/v1/61c2308d4d62147d4f600ace/1701793020829-BA8DU9DKJ0Z9VOSX0LY1/FS213_2__99311.jpg"
+    },
+    {
+      "id": "7",
+      "titulo": "Camisa de Overwatch",
+      "precio": 12.99,
+      "descripcion": "Camisa con diseño de Overwatch.",
+      "imagen": "https://m.media-amazon.com/images/I/41FBQz52IrL._AC_SY580_.jpg",
+      "tallas": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ]
+    },
+    {
+      "id": "8",
+      "titulo": "Poster de The Last of Us",
+      "precio": 15.99,
+      "descripcion": "Poster decorativo de The Last of Us.",
+      "imagen": "https://i.pinimg.com/originals/f9/89/2c/f9892c3b56c320a588bccd6674149ea6.png",
+      "tamaño": "24x36 pulgadas"
+    },
+    {
+      "id": "9",
+      "titulo": "Almohada de Super Mario",
+      "precio": 24.99,
+      "descripcion": "Almohada suave con diseño de Super Mario.",
+      "imagen": "https://i5.walmartimages.com.mx/gr/images/product-images/img_large/00750138849231L.jpg"
+    },
+    {
+      "id": "10",
+      "titulo": "Peluche de Pikachu",
+      "precio": 29.99,
+      "descripcion": "Peluche suave de Pikachu de Pokémon.",
+      "imagen": "https://peluches-pokemon.com/wp-content/uploads/2022/01/pikachu-peluche-gigante-pikachu-sonriente-80cm.jpg",
+      "tamaño": "12 pulgadas"
+    }
+  ],
+  "usuarios": [
+    {
+      "nombre": "Hinara",
+      "email": "hinara@gmail.com",
+      "password": "121212",
+      "id": "2a6f"
+    },
+    {
+      "nombre": "Pedro",
+      "email": "pedro@example.com",
+      "password": "mypassword",
+      "id": "3141"
+    }
+  ]
 }
-
-
-

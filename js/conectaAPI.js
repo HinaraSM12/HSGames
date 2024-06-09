@@ -7,8 +7,6 @@ async function listaVideojuego(){
     });
     
     const conexionConvertida=await conexion.json();
-    /* console.log(conexion);
-    console.log(conexionConvertida); */
     return conexionConvertida;
 }
 

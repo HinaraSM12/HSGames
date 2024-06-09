@@ -3,22 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Administrador - AluraGeek</title>
-    <link rel="stylesheet" href="./css/styles.css">
-    <!--<link rel="stylesheet" href="./css/reset.css">-->
+    <title>Administrador - HSGames</title>
+    <link rel="stylesheet" href="./css/admin.css">
 </head>
 <body>
-    <section id="admin-menu">
-        <div class="container">
-            <h2>Menú de Administrador</h2>
-            <button id="add-product">Agregar Producto</button>
-            <button id="edit-product">Editar Producto</button>
-            <button id="search-product">Buscar Producto</button>
-            <button id="delete-product">Eliminar Producto</button>
-        </div>
-    </section>
+    <header id="header">
+        <a href="index.html"><img class="logo" src="img/logo.png"></a>
+        <!--<h1>HSGames</h1>-->
+    </header>
 
-    <!-- Aquí irán los scripts -->
-    <script src="./js/scripts.js"></script>
+    <section id="admin-menu">
+
+        <section id="product-list">
+            <div class="container">
+                <div class="contenedor2">
+                    <h2>Mis Productos</h2>
+                    <div class="gallery" id="gallery"></div>
+                </div>
+                <div class="contenedor2">
+                    <h2>Formulario de Producto</h2>
+                    <form id="product-form">
+                        <input type="hidden" id="product-id">
+                        <select id="product-category" required>
+                            <option value="" disabled selected>Selecciona una Categoría</option>
+                            <option value="Videojuegos">Videojuegos</option>
+                            <option value="Consolas">Consolas</option>
+                        </select>
+                        <input type="text" id="product-title" placeholder="Título del Producto" required>
+                        <input type="text" id="product-price" placeholder="Precio del Producto" required>
+                        <input type="text" id="product-description" placeholder="Descripción del Producto" required>
+                        <input type="text" id="product-image" placeholder="URL de la Imagen del Producto" required>
+                        <button type="submit" id="form-submit">Guardar Producto</button>
+                        <button type="button" id="clear-form">Limpiar Campos</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </section>
+    <script src="./js/admin.js"></script>
 </body>
-</html>
