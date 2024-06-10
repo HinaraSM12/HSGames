@@ -2,51 +2,48 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ofertas - HSGames</title>
+    <title>Nuestras Tiendas - HSGames</title>
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="icon" href="../img/logo-chiquito.png" type="image/png">
 </head>
 <body>
     <header id="header">
-        <!--<h1>HSGames</h1>-->
-        <div class="container">
-            <a href="../index.html"><img class="logo" src="../img/logo.png"></a>
-            <input type="text" placeholder="Buscar productos..." id="search-bar" data-busqueda>
-            <button id="search-button" data-boton-busqueda>Buscar</button>
-        </div>
+        <a href="../index.html"><img class="logo" src="../img/logo.png"></a>
+        <h1>HSGames</h1>
     </header>
-
-    <nav id="menu" class="menu">
-        <ul>
-        <li><a class="nav-link" href="login.html">Login</a></li>
-        <li><a class="nav-link" href="crear-cuenta.html">Crea tu cuenta</a></li>
-        <li><a class="nav-link" href="#carrito">Carrito</a></li>
-        </ul>
-    </nav>
-    <div class="container-all">
-        <section id="productos">
-            <h1 id="ofertas-list">Ofertas</h1>
-            <div class="lista-producto">
-                <ul class="product-grid" data-p>
-                    <!-- Los elementos de productos se generarán aquí -->
-                </ul>
+    <main class="tiendas">
+        <section id="nuestras-tiendas">
+            <h1>Nuestras tiendas</h1>
+            <p>Descubre nuestras tiendas físicas y encuentra la más cercana a ti.</p>
+            <div class="tienda">
+                <h2>Tienda Principal</h2>
+                <p>Dirección: Calle Principal, 123</p>
+                <p>Teléfono: 555-1234</p>
+                <p>Horario: Lunes a Viernes de 9am a 7pm</p>
+            </div>
+            <div class="tienda">
+                <h2>Sucursal Norte</h2>
+                <p>Dirección: Av. Norte, 456</p>
+                <p>Teléfono: 555-5678</p>
+                <p>Horario: Lunes a Sábado de 10am a 8pm</p>
+            </div>
+            <div class="tienda">
+                <h2>Sucursal Sur</h2>
+                <p>Dirección: Av. Sur, 789</p>
+                <p>Teléfono: 555-9012</p>
+                <p>Horario: Martes a Domingo de 11am a 9pm</p>
             </div>
         </section>
-        <div class="gallery" id="gallery"></div>
-    </div>
-
-
-
+    </main>
     <footer>
         <div class="container-footer">
             <a href="../index.html"><img class="logo" src="../img/logo.png"></a>
             <nav id="navbar" class="navbar">
                 <ul>
-                    <li><a class="nav-link" href="../extra/quienes-somos.html">Quiénes somos</a></li>
-                    <li><a class="nav-link" href="../extra/terminos-condiciones.html">Términos y condiciones</a></li>
-                    <li><a class="nav-link" href="../extra/nuestras-tiendas.html">Nuestras tiendas</a></li>
+                  <li><a class="nav-link" href="quienes-somos.html">Quiénes somos</a></li>
+                  <li><a class="nav-link" href="terminos-condiciones.html">Términos y condiciones</a></li>
+                  <li><a class="nav-link" href="nuestras-tiendas.html">Nuestras tiendas</a></li>
                 </ul>
             </nav>
             <form id="contact-form">
@@ -67,5 +64,4 @@
     </footer>
     <script src="../js/contactos.js"></script>
 </body>
-    <script src="../js/ofertas.js" type="module"></script>
 </html>

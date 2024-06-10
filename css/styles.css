@@ -692,3 +692,48 @@ footer {
 .about-container ul {
     padding-left: 20px;
 }
+
+
+/* nuestras tiendas*/
+
+.tiendas{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#nuestras-tiendas {
+    align-items: center;
+    padding: 1rem 0;
+    width: 80%;
+}
+
+/* Estilos para las tarjetas de las tiendas */
+.tienda {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.tienda h2 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.tienda p {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 0.5rem;
+}
+
+.tienda a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.tienda a:hover {
+    text-decoration: underline;
+}
