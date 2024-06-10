@@ -50,7 +50,7 @@ Para instalar y ejecutar este proyecto localmente, sigue estos pasos:
 - **Ver lista de productos**: Los administradores pueden ver una lista completa de todos los productos disponibles.
 
 ### Futuro
-- Habrán más funcionalidades, aún no está terminada al 100%, carrito y crear cuenta no han sido integrados, al igual que comprar.
+- Se agregarán más funcionalidades; actualmente, el proyecto no está completado al 100%. Aspectos como el carrito de compras, la creación de cuentas y la funcionalidad de compra aún no se han integrado, pero están en planes futuros de desarrollo.
 
 ## Tecnologías Utilizadas
 - **HTML5**: Estructura de la aplicación.
