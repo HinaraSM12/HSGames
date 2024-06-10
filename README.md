@@ -10,8 +10,6 @@ Este proyecto fue creado como parte del **Challenge AluraGeek** de Alura Latam y
 
 - [Descripción](#descripción)
 - [Instalación](#instalación)
-- [Uso](#uso)
-- [Estructura del Proyecto](#estructura-del-proyecto)
 - [Créditos](#créditos)
 - [Licencia](#licencia)
 
