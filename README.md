@@ -26,11 +26,10 @@ Para instalar y ejecutar este proyecto localmente, sigue estos pasos:
     cd HSGames
     ```
 3. Configuración de la base de datos simulada con JSON Server
-    ```npm init
     ```
-    ```npm install json-server
-    ```
-    ```npx json-server --watch db.json --port 3001
+    npm init
+    npm install json-server
+    npx json-server --watch db.json --port 3001
     ```
 
 4. Abre el archivo `index.html` en tu navegador para ver la página principal.
