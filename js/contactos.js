@@ -23,11 +23,15 @@ document.addEventListener('DOMContentLoaded', () => {
         } else {
             errorNombre.textContent = '';
         }
-
+        
         // Validación del correo (HTML5 required attribute will handle this)
+        const re = /\S+@\S+\.\S+/
         if (correoInput.value.trim() === '') {
             valid = false;
             errorCorreo.textContent = 'El correo electrónico no puede estar vacío.';
+        } else if (!re.test(correoInput.value.trim())){ 
+            errorCorreo.textContent = 'Por favor, introduzca un correo electrónico válido.';
+            valid = false;
         } else {
             errorCorreo.textContent = '';
         }
