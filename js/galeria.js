@@ -7,51 +7,61 @@ async function galeria() {
         const galleryElement = document.getElementById('gallery');
 
         for (const categoria in data) {
-            const categoriaElement = document.createElement('div');
-            categoriaElement.classList.add('category');
-
-            const categoriaTitle = document.createElement('h2');
-            categoriaTitle.textContent = categoria;
-            categoriaElement.appendChild(categoriaTitle);
-
-            const productsElement = document.createElement('div');
-            productsElement.classList.add('products');
-
             if (categoria != "usuarios") {
+                const categoriaElement = document.createElement('div');
+                categoriaElement.classList.add('category');
 
-            for (let i = 0; i < 5; i++) {
-                const producto = data[categoria][i];
-                const productElement = document.createElement('div');
-                productElement.classList.add('product');
+                const categoriaTitle = document.createElement('h2');
+                categoriaTitle.textContent = categoria;
+                categoriaElement.appendChild(categoriaTitle);
 
-                const imagenElement = document.createElement('img');
-                imagenElement.src = producto.imagen;
-                imagenElement.alt = producto.titulo;
-                productElement.appendChild(imagenElement);
+                const productsElement = document.createElement('div');
+                productsElement.classList.add('products');
+                productsElement.id=`products-${categoria.toLowerCase()}`;
 
-                const nombreElement = document.createElement('h3');
-                nombreElement.textContent = producto.titulo;
-                productElement.appendChild(nombreElement);
 
-                const precioElement = document.createElement('p');
-                precioElement.textContent = `Precio: $${producto.precio}`;
-                productElement.appendChild(precioElement);
+                for (let i = 0; i < 5; i++) {
+                    const producto = data[categoria][i];
+                    const productElement = document.createElement('div');
+                    productElement.classList.add('product');
 
-                const detallesElement = document.createElement('a');
-                detallesElement.href = producto.detalles;
-                detallesElement.textContent = 'Ver detalles';
-                productElement.appendChild(detallesElement);
+                    const imagenElement = document.createElement('img');
+                    imagenElement.src = producto.imagen;
+                    imagenElement.alt = producto.titulo;
+                    productElement.appendChild(imagenElement);
 
-                productsElement.appendChild(productElement);
-            }}
+                    const nombreElement = document.createElement('h3');
+                    nombreElement.textContent = producto.titulo;
+                    productElement.appendChild(nombreElement);
 
-            const verTodosElement = document.createElement('button');
-            verTodosElement.textContent = 'Ver todos';
-            verTodosElement.addEventListener('click', () => mostrarTodosLosProductos(data[categoria]));
-            categoriaElement.appendChild(verTodosElement);
+                    const precioElement = document.createElement('p');
+                    precioElement.textContent = `Precio: $${producto.precio}`;
+                    productElement.appendChild(precioElement);
 
-            categoriaElement.appendChild(productsElement);
-            galleryElement.appendChild(categoriaElement);
+                    const detallesElement = document.createElement('a');
+                    detallesElement.href = producto.detalles;
+                    detallesElement.textContent = 'Ver detalles';
+                    productElement.appendChild(detallesElement);
+
+                    productsElement.appendChild(productElement);
+
+                    detallesElement.addEventListener('click', () => {
+                        window.open(`/pages/detalles-productos.html?titulo=${encodeURIComponent(producto.titulo)}&descripcion=${encodeURIComponent(producto.descripcion)}&precio=${encodeURIComponent(producto.precio)}&imagen=${encodeURIComponent(producto.imagen)}`);
+                    });
+                }
+
+                const botonVerTodos = document.createElement('button');
+                botonVerTodos.id = `ver-todos-${categoria.toLowerCase()}`;
+                botonVerTodos.dataset.categoria = categoria;
+                botonVerTodos.textContent = 'Ver todo';
+            
+
+                botonVerTodos.addEventListener('click', () => mostrarTodosLosProductos(data[categoria], categoria));
+                categoriaElement.appendChild(botonVerTodos);
+
+                categoriaElement.appendChild(productsElement);
+                galleryElement.appendChild(categoriaElement);
+            }
         }
 
     } catch (error) {
@@ -60,8 +70,8 @@ async function galeria() {
 }
 
 // Función para mostrar todos los productos de una categoría
-function mostrarTodosLosProductos(categoria) {
-    const galleryElement = document.getElementById('gallery');
+function mostrarTodosLosProductos(categoria, cat) {
+    const galleryElement = document.getElementById(`products-${cat.toLowerCase()}`);
     galleryElement.innerHTML = '';
 
 
@@ -100,8 +110,8 @@ function mostrarTodosLosProductos(categoria) {
 
         galleryElement.appendChild(productElement);
     });
-
-    const botonVerTodos = document.getElementById('ver-todos');
+    
+    const botonVerTodos = document.getElementById(`ver-todos-${cat.toLowerCase()}`);
     botonVerTodos.style.display = 'none';
 }
 

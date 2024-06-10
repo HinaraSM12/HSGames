@@ -1,7 +1,7 @@
 {
   "Videojuegos": [
     {
-      "id": "1",
+      "id": 1,
       "titulo": "The Legend of Zelda: Breath of the Wild",
       "precio": 59.99,
       "descripcion": "Explora el vasto mundo de Hyrule y descubre sus secretos.",
@@ -9,11 +9,11 @@
       "plataforma": "Nintendo Switch"
     },
     {
+      "id": "2",
       "titulo": "Red Dead Redemption 2",
-      "precio": "39.9",
+      "precio": 39.9,
       "descripcion": "Vive la vida de un forajido en el salvaje oeste.",
-      "imagen": "https://i.blogs.es/juegos/13424/red_dead_3__nombre_temporal_/fotos/maestras/red_dead_3__nombre_temporal_-4030936.jpg",
-      "id": "2"
+      "imagen": "https://i.blogs.es/juegos/13424/red_dead_3__nombre_temporal_/fotos/maestras/red_dead_3__nombre_temporal_-4030936.jpg"
     },
     {
       "id": "3",
@@ -26,10 +26,9 @@
     {
       "id": "4",
       "titulo": "Super Mario Odyssey",
-      "precio": 49.99,
+      "precio": "30.99",
       "descripcion": "Únete a Mario en una emocionante aventura por diferentes reinos.",
-      "imagen": "https://metodologic.net/wp-content/uploads/2017/11/Mario_Odyssey_portada.jpg",
-      "plataforma": "Nintendo Switch"
+      "imagen": "https://metodologic.net/wp-content/uploads/2017/11/Mario_Odyssey_portada.jpg"
     },
     {
       "id": "5",
@@ -139,7 +138,7 @@
     },
     {
       "id": "10",
-      "nombre": "PlayStation 3",
+      "titulo": "PlayStation 3",
       "fabricante": "Sony",
       "precio": 199.99,
       "descripcion": "Consola de la generación anterior de Sony con soporte para juegos en línea.",
@@ -211,15 +210,9 @@
     {
       "id": "4",
       "titulo": "Camiseta de Pac-Man",
-      "precio": 19.99,
+      "precio": "19.99",
       "descripcion": "Camiseta con diseño clásico de Pac-Man.",
-      "imagen": "https://world.benetton.com/dw/image/v2/BBSF_PRD/on/demandware.static/-/Sites-ucb-master/default/dw21c9fbcd/images/Full_PDP_h/UCB-Bambino_22P_3096C103F_100_FS_Full_PDP_h.jpg",
-      "tallas": [
-        "S",
-        "M",
-        "L",
-        "XL"
-      ]
+      "imagen": "https://i0.wp.com/rockdreams.com.co/wp-content/uploads/2023/05/PAC-MAN-2.jpg"
     },
     {
       "id": "5",
