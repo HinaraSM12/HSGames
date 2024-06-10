@@ -49,6 +49,9 @@ Para instalar y ejecutar este proyecto localmente, sigue estos pasos:
 - **Eliminar productos**: Los administradores pueden eliminar productos de la tienda.
 - **Ver lista de productos**: Los administradores pueden ver una lista completa de todos los productos disponibles.
 
+### Futuro
+- Habrán más funcionalidades, aún no está terminada al 100%, carrito y crear cuenta no han sido integrados, al igual que comprar.
+
 ## Tecnologías Utilizadas
 - **HTML5**: Estructura de la aplicación.
 - **CSS3**: Estilos y diseño responsivo.

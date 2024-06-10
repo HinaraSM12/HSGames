@@ -1,7 +1,7 @@
 {
   "Videojuegos": [
     {
-      "id": 1,
+      "id": "1",
       "titulo": "The Legend of Zelda: Breath of the Wild",
       "precio": 59.99,
       "descripcion": "Explora el vasto mundo de Hyrule y descubre sus secretos.",
@@ -49,10 +49,9 @@
     {
       "id": "7",
       "titulo": "Grand Theft Auto V",
-      "precio": 29.99,
+      "precio": "29.99",
       "descripcion": "Vive una vida de crimen en Los Santos.",
-      "imagen": "https://media-rockstargames-com.akamaized.net/tina-uploads/posts/9k922a7212kao3/59a05cd4bc90a814ee52dceb30d70de2c1946953.jpg",
-      "plataforma": "Multiplataforma"
+      "imagen": "https://media-rockstargames-com.akamaized.net/tina-uploads/posts/9k922a7212kao3/59a05cd4bc90a814ee52dceb30d70de2c1946953.jpg"
     },
     {
       "id": "8",
