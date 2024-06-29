@@ -70,7 +70,7 @@ Para instalar y ejecutar este proyecto localmente, sigue estos pasos:
 
 ## Créditos
 
-Este proyecto fue desarrollado por el equipo de HSGames como parte del **Challenge AluraGeek** de Alura Latam y Oracle Next Education.
+Este proyecto fue desarrollado por Hinara Sánchez como parte del **Challenge AluraGeek** de Alura Latam y Oracle Next Education.
 
 ## Licencia
 
