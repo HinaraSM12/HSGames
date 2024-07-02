@@ -10,12 +10,13 @@ document.addEventListener('DOMContentLoaded', () => {
     // Agrega un evento al botón de limpiar formulario
     clearFormButton.addEventListener('click', () => {
         form.reset();
+        resetForm();
     });
 
     // Evento para manejar el envío del formulario de agregar/editar producto
     form.addEventListener('submit', async (event) => {
         event.preventDefault();
-        const id = document.getElementById('product-id').value;
+        let id = document.getElementById('product-id').value;
         const category = document.getElementById('product-category').value;
         const title = document.getElementById('product-title').value;
         const price = document.getElementById('product-price').value;
@@ -45,11 +46,13 @@ document.addEventListener('DOMContentLoaded', () => {
         // Si hay un id, es una edición
         if (id) {
             await editarProducto(id, category, title, price, description, image);
+            id = null; // Reiniciar el ID después de la edición
+            resetForm(); // Reiniciar el formulario después de editar
         } else {
             await agregarProducto(category, title, price, description, image);
+            form.reset(); // Limpia el formulario después de agregar
         }
 
-        form.reset(); // Limpia el formulario después de agregar o editar el producto
         mostrarProductos(); // Recargar la lista de productos
     });
 
@@ -72,6 +75,15 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('product-description').value = producto.descripcion || '';
         document.getElementById('product-image').value = producto.imagen || '';
         document.getElementById('form-submit').textContent = producto.id ? 'Actualizar Producto' : 'Guardar Producto';
+    }
+
+    // Función para reiniciar el formulario y desactivar campos
+    function resetForm() {
+        document.getElementById('product-id').value = '';
+        document.getElementById('product-title').value = '';
+        document.getElementById('product-id').removeAttribute('disabled');
+        document.getElementById('product-title').removeAttribute('disabled');
+        document.getElementById('form-submit').textContent = 'Guardar Producto';
     }
 
     // Función para agregar un producto
@@ -128,6 +140,9 @@ document.addEventListener('DOMContentLoaded', () => {
         const producto = productosData[categoria].find(product => product.id === id);
         if (producto) {
             mostrarFormulario(producto);
+            // Desactivar los campos de ID y título durante la edición
+            document.getElementById('product-id').setAttribute('disabled', true);
+            document.getElementById('product-title').setAttribute('disabled', true);
         } else {
             throw new Error("Producto no encontrado");
         }
