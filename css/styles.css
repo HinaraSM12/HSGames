@@ -234,7 +234,7 @@ header h1 {
 /* banner */
 
 #banner {
-    background: url('/img/banner-image.png') no-repeat center center/cover;
+    background: url('https://www.thesharpproject.co.uk/assets/games-banner-02-1.jpg') no-repeat center center/cover;
     color: white;
     text-align: center;
     padding: 5rem 1rem;
