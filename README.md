@@ -6,12 +6,32 @@ HSGames es una tienda en línea dedicada a la venta de productos relacionados co
 
 Este proyecto fue creado como parte del **Challenge AluraGeek** de Alura Latam y Oracle Next Education.
 
+###Inicio
+![C1](https://github.com/HinaraSM12/HSGames/assets/121843288/75753f75-bb48-403e-8a05-167f4c8eae80)
+
+###Ofertas
+![c2](https://github.com/HinaraSM12/HSGames/assets/121843288/673d3fda-c12e-406d-8073-3e457f6c9086)
+
+###Detalles del producto
+![c3](https://github.com/HinaraSM12/HSGames/assets/121843288/e8b8639d-7f59-4347-ab82-a41bb37c1d5b)
+
+###Iniciar Sesión
+![c4](https://github.com/HinaraSM12/HSGames/assets/121843288/12d9057f-734f-460a-9b8d-3566e25c7d10)
+
+###Vista de admin
+![c5](https://github.com/HinaraSM12/HSGames/assets/121843288/6f360614-60ec-4c0e-bc50-fb77cbc18648)
+
+###Crear cuenta
+![c6](https://github.com/HinaraSM12/HSGames/assets/121843288/8f989fc4-aaf9-4742-bede-c34405c7284b)
+
+
 ## Contenidos
 
 - [Descripción](#descripción)
 - [Instalación](#instalación)
 - [Créditos](#créditos)
 - [Licencia](#licencia)
+
 
 ## Instalación
 
