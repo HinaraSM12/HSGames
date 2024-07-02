@@ -93,8 +93,6 @@ Para instalar y ejecutar este proyecto localmente, sigue estos pasos:
 - **css/**: Contiene archivos de estilos CSS.
 - **img/**: Contiene imágenes utilizadas en el sitio web.
 - **js/**: Contiene archivos JavaScript que manejan la lógica del sitio.
-- **pages/**: Contiene archivos HTML que manejan el maquetado del sitio.
-- **extra/**: Contiene archivos HTML que manejan el maquetado extra del sitio.
 - **index.html**: Página principal del sitio web.
 - **admin**: Archivo que contiene toda la lógica detrás de las funcionalidades del administrador.
 
