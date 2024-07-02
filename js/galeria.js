@@ -59,7 +59,7 @@ async function galeria() {
 
                     detallesElement.addEventListener('click', (e) => {
                         e.preventDefault();
-                        window.location.href = `/pages/detalles-productos.html?titulo=${encodeURIComponent(producto.titulo)}&descripcion=${encodeURIComponent(producto.descripcion)}&precio=${encodeURIComponent(producto.precio)}&imagen=${encodeURIComponent(producto.imagen)}`;
+                        window.location.href = `detalles-productos.html?titulo=${encodeURIComponent(producto.titulo)}&descripcion=${encodeURIComponent(producto.descripcion)}&precio=${encodeURIComponent(producto.precio)}&imagen=${encodeURIComponent(producto.imagen)}`;
                     });
                 }
 
@@ -138,7 +138,7 @@ function mostrarTodosLosProductos(categoria, cat) {
 
         detallesElement.addEventListener('click', (e) => {
             e.preventDefault();
-            window.location.href = `/pages/detalles-productos.html?titulo=${encodeURIComponent(producto.titulo)}&descripcion=${encodeURIComponent(producto.descripcion)}&precio=${encodeURIComponent(producto.precio)}&imagen=${encodeURIComponent(producto.imagen)}`;
+            window.location.href = `detalles-productos.html?titulo=${encodeURIComponent(producto.titulo)}&descripcion=${encodeURIComponent(producto.descripcion)}&precio=${encodeURIComponent(producto.precio)}&imagen=${encodeURIComponent(producto.imagen)}`;
         });
 
 

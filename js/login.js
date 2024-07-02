@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const usuario = data.find(user => user.email === email && user.password === password);
    
             if (usuario) {
-                window.location.href = '../pages/admin.html';
+                window.location.href = 'admin.html';
             } else {
                 document.getElementById('error-message').textContent = 'Usuario o contraseña incorrectos';
             }

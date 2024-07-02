@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const verOfertasButton = document.getElementById('banner-button');
 
     verOfertasButton.addEventListener('click', () => {
-            window.location.href = '../pages/ofertas.html';
+            window.location.href = 'ofertas.html';
     });
 
 });
