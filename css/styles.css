@@ -737,3 +737,9 @@ footer {
 .tienda a:hover {
     text-decoration: underline;
 }
+
+
+.titulo{
+    text-align: center;
+    font-size: 30px;
+}

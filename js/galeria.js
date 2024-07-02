@@ -107,6 +107,10 @@ function mostrarTodosLosProductos(categoria, cat) {
         detallesElement.href = producto.detalles;
         detallesElement.textContent = 'Ver detalles';
         productElement.appendChild(detallesElement);
+        
+        detallesElement.addEventListener('click', () => {
+            window.open(`/pages/detalles-productos.html?titulo=${encodeURIComponent(producto.titulo)}&descripcion=${encodeURIComponent(producto.descripcion)}&precio=${encodeURIComponent(producto.precio)}&imagen=${encodeURIComponent(producto.imagen)}`);
+        });
 
         galleryElement.appendChild(productElement);
     });

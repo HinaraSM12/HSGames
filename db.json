@@ -24,19 +24,11 @@
       "plataforma": "PlayStation 4"
     },
     {
-      "id": "4",
-      "titulo": "Super Mario Odyssey",
-      "precio": "30.99",
-      "descripcion": "Únete a Mario en una emocionante aventura por diferentes reinos.",
-      "imagen": "https://metodologic.net/wp-content/uploads/2017/11/Mario_Odyssey_portada.jpg"
-    },
-    {
       "id": "5",
       "titulo": "Cyberpunk 2077",
-      "precio": 49.99,
+      "precio": "49",
       "descripcion": "Explora un mundo abierto futurista en Night City.",
-      "imagen": "https://zurpusiangames.com/img/cyberpunk_2077.jpg",
-      "plataforma": "PlayStation 4, Xbox One, PC"
+      "imagen": "https://zurpusiangames.com/img/cyberpunk_2077.jpg"
     },
     {
       "id": "6",
@@ -60,6 +52,13 @@
       "descripcion": "Acompaña a Kratos y Atreus en su viaje a través de la mitología nórdica.",
       "imagen": "https://uvejuegos.com/img/caratulas/67097/godofwar.jpg",
       "plataforma": "PlayStation 4"
+    },
+    {
+      "id": "5b9a",
+      "titulo": "Super Mario Odyssey",
+      "precio": "14434",
+      "descripcion": "Únete a Mario en una emocionante aventura por diferentes reinos.",
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfBrO70O_1bGSPrX_emgqFnVOWbu0VsaPsQg&s"
     }
   ],
   "Consolas": [
@@ -276,6 +275,12 @@
       "email": "pedro@example.com",
       "password": "mypassword",
       "id": "3141"
+    },
+    {
+      "id": "c764",
+      "nombre": "hinara",
+      "email": "hisanchezm@unal.edu.co",
+      "password": "121212"
     }
   ]
 }
