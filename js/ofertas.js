@@ -15,7 +15,7 @@ async function buscarOfertas() {
     let resultados = [];
 
     for (const categoria of categorias) {
-        const response = await fetch(`http://localhost:3001/${categoria}`);
+        const response = await fetch(`https://my-json-server.typicode.com/hinarasm12/ApiGame/${categoria}`);
         const data = await response.json();
         resultados = resultados.concat(data);
     }
