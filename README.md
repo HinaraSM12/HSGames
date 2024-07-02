@@ -24,6 +24,16 @@ Este proyecto fue creado como parte del **Challenge AluraGeek** de Alura Latam y
 -Crear cuenta
 ![c6](https://github.com/HinaraSM12/HSGames/assets/121843288/8f989fc4-aaf9-4742-bede-c34405c7284b)
 
+-Crear cuenta
+![c8](https://github.com/HinaraSM12/HSGames/assets/121843288/dd628097-fd11-43f6-bebb-e79ee9b76699)
+
+-Términos y condiciones
+![c9](https://github.com/HinaraSM12/HSGames/assets/121843288/07061f49-aded-49bb-81d8-ac495c3f2363)
+
+-Quiénes somos
+![c7](https://github.com/HinaraSM12/HSGames/assets/121843288/8c7286ba-1ebb-4fdb-8fd8-cad573a0dbe6)
+
+
 
 ## Contenidos
 
