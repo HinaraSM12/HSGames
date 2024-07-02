@@ -1,19 +1,18 @@
 document.addEventListener('DOMContentLoaded', () => {
+    let productosData = {}; // Variable global para almacenar los datos de la API
+
     // Cargar la lista de productos al cargar la página
-    
-    mostrarProductos();
+    cargarProductos();
 
     const form = document.getElementById('product-form');
-
     const clearFormButton = document.getElementById('clear-form');
-
 
     // Agrega un evento al botón de limpiar formulario
     clearFormButton.addEventListener('click', () => {
         form.reset();
     });
 
-    // Evento para mostrar el formulario de agregar producto
+    // Evento para manejar el envío del formulario de agregar/editar producto
     form.addEventListener('submit', async (event) => {
         event.preventDefault();
         const id = document.getElementById('product-id').value;
@@ -28,8 +27,8 @@ document.addEventListener('DOMContentLoaded', () => {
             return;
         }
 
-        if (title.length > 20) {
-            alert('El nombre del producto debe tener máximo 20 caracteres.');
+        if (title.length > 150) {
+            alert('El nombre del producto debe tener máximo 150 caracteres.');
             return;
         }
 
@@ -50,117 +49,113 @@ document.addEventListener('DOMContentLoaded', () => {
             await agregarProducto(category, title, price, description, image);
         }
 
-        form.reset(); // Limpia el formulario después de agregar el producto
-        await mostrarProductos(); // Recargar la lista de productos
+        form.reset(); // Limpia el formulario después de agregar o editar el producto
+        mostrarProductos(); // Recargar la lista de productos
     });
 
-});
-
-
-// Función para mostrar el formulario
-function mostrarFormulario(producto = {}) {
-    document.getElementById('product-id').value = producto.id || '';
-    document.getElementById('product-title').value = producto.titulo || '';
-    document.getElementById('product-price').value = producto.precio || '';
-    document.getElementById('product-description').value = producto.descripcion || '';
-    document.getElementById('product-image').value = producto.imagen || '';
-    document.getElementById('form-submit').textContent = producto.id ? 'Actualizar Producto' : 'Guardar Producto';
-}
-
-
-// Función para agregar un producto
-async function agregarProducto(categoria, titulo, precio, descripcion, imagen) {
-    const response = await fetch(`http://localhost:3001/${categoria}`, {
-        method: 'POST',
-        headers: {
-            'Content-type': 'application/json'
-        },
-        body:JSON.stringify({
-            titulo:titulo,
-            precio:precio,
-            descripcion:descripcion,
-            imagen:imagen,
-        })
-    })
-    if(!response.ok){
-        throw new Error("No fue posible crear el producto");
-    }
-    const producto = await response.json();
-    mostrarProductos();
-
-    return producto;
-
-}
-
-// Función para editar un producto
-async function editarProducto(id, categoria, titulo, precio, descripcion, imagen) {
-    const response = await fetch(`http://localhost:3001/${categoria}/${id}`, {
-        method: 'PUT',
-        headers: {
-            'Content-type': 'application/json'
-        },
-        body:JSON.stringify({
-            id:id,
-            titulo:titulo,
-            precio:precio,
-            descripcion:descripcion,
-            imagen:imagen,
-        })
-    })
-    if(!response.ok){
-        throw new Error("No fue posible crear el producto");
-    }
-    const producto = await response.json();
-    mostrarProductos();
-    return producto;
-
-}
-
-
-// Función para cargar datos del producto en el formulario
-async function editarProductoFormulario(categoria, id) {
-    const response = await fetch(`http://localhost:3001/${categoria}/${id}`, {
-        method: 'GET',
-        headers: {
-            'Content-type': 'application/json'
+    // Función para cargar productos desde la API y almacenarlos en la variable global
+    async function cargarProductos() {
+        try {
+            const response = await fetch('https://my-json-server.typicode.com/hinarasm12/ApiGame/db');
+            productosData = await response.json(); // Almacenar los datos en la variable global
+            mostrarProductos(); // Mostrar los productos al cargar
+        } catch (error) {
+            console.error('Error al obtener los datos:', error);
         }
-    });
-    if(!response.ok){
-        throw new Error("No fue posible crear el producto");
     }
-    const producto = await response.json();
-    mostrarFormulario(producto);
-    return producto;
-}
 
-// Función para eliminar un producto
-async function eliminarProducto(categoria,id) {
-    const response = await fetch(`http://localhost:3001/${categoria}/${id}`, {
-        method: 'DELETE',
-        headers: {
-            'Content-type': 'application/json'
+    // Función para mostrar el formulario
+    function mostrarFormulario(producto = {}) {
+        document.getElementById('product-id').value = producto.id || '';
+        document.getElementById('product-title').value = producto.titulo || '';
+        document.getElementById('product-price').value = producto.precio || '';
+        document.getElementById('product-description').value = producto.descripcion || '';
+        document.getElementById('product-image').value = producto.imagen || '';
+        document.getElementById('form-submit').textContent = producto.id ? 'Actualizar Producto' : 'Guardar Producto';
+    }
+
+    // Función para agregar un producto
+    async function agregarProducto(categoria, titulo, precio, descripcion, imagen) {
+        const response = await fetch(`https://my-json-server.typicode.com/hinarasm12/ApiGame/${categoria}`, {
+            method: 'POST',
+            headers: {
+                'Content-type': 'application/json'
+            },
+            body: JSON.stringify({
+                titulo: titulo,
+                precio: precio,
+                descripcion: descripcion,
+                imagen: imagen,
+            })
+        });
+        if (!response.ok) {
+            throw new Error("No fue posible crear el producto");
         }
-    });
-
-    if(!response.ok){
-        throw new Error("No fue posible crear el producto");
+        const producto = await response.json();
+        productosData[categoria].push(producto); // Actualizar la variable global
+        return producto;
     }
-    const producto = await response.json();
-    mostrarProductos();
 
-    return producto;
-}
+    // Función para editar un producto
+    async function editarProducto(id, categoria, titulo, precio, descripcion, imagen) {
+        const response = await fetch(`https://my-json-server.typicode.com/hinarasm12/ApiGame/${categoria}/${id}`, {
+            method: 'PUT',
+            headers: {
+                'Content-type': 'application/json'
+            },
+            body: JSON.stringify({
+                id: id,
+                titulo: titulo,
+                precio: precio,
+                descripcion: descripcion,
+                imagen: imagen,
+            })
+        });
+        if (!response.ok) {
+            throw new Error("No fue posible actualizar el producto");
+        }
+        const producto = await response.json();
+        // Actualizar la variable global
+        const index = productosData[categoria].findIndex(product => product.id === id);
+        if (index !== -1) {
+            productosData[categoria][index] = producto;
+        }
+        return producto;
+    }
 
+    // Función para cargar datos del producto en el formulario
+    function editarProductoFormulario(categoria, id) {
+        const producto = productosData[categoria].find(product => product.id === id);
+        if (producto) {
+            mostrarFormulario(producto);
+        } else {
+            throw new Error("Producto no encontrado");
+        }
+    }
 
-async function mostrarProductos() {
-    try {
-        const response = await fetch('../db.json');
-        const data = await response.json();
+    // Función para eliminar un producto
+    async function eliminarProducto(categoria, id) {
+        const response = await fetch(`https://my-json-server.typicode.com/hinarasm12/ApiGame/${categoria}/${id}`, {
+            method: 'DELETE',
+            headers: {
+                'Content-type': 'application/json'
+            }
+        });
 
+        if (!response.ok) {
+            throw new Error("No fue posible eliminar el producto");
+        }
+        productosData[categoria] = productosData[categoria].filter(product => product.id !== id); // Actualizar la variable global
+        mostrarProductos();
+    }
+
+    // Función para mostrar los productos desde la variable global
+    function mostrarProductos() {
         const galleryElement = document.getElementById('gallery');
+        galleryElement.innerHTML = ''; // Limpiar el contenido actual de la galería
 
-        for (const categoria in data) {
-            if (categoria != "usuarios") {
+        for (const categoria in productosData) {
+            if (categoria !== "usuarios") {
                 const categoriaElement = document.createElement('div');
                 categoriaElement.classList.add('category');
 
@@ -170,9 +165,9 @@ async function mostrarProductos() {
 
                 const productsElement = document.createElement('div');
                 productsElement.classList.add('products');
-    
-                for (let i = 0; i < data[categoria].length; i++) {
-                    const producto = data[categoria][i];
+
+                for (let i = 0; i < productosData[categoria].length; i++) {
+                    const producto = productosData[categoria][i];
                     const productElement = document.createElement('div');
                     productElement.classList.add('product');
 
@@ -189,38 +184,26 @@ async function mostrarProductos() {
                     precioElement.textContent = `Precio: $${producto.precio}`;
                     productElement.appendChild(precioElement);
 
-                    const detallesElement = document.createElement('a');
-                    detallesElement.href = producto.detalles;
-                    detallesElement.textContent = 'Ver detalles';
-                    productElement.appendChild(detallesElement);
-
-                    // Add edit button
+                    // Botón para editar
                     const editarButton = document.createElement('button');
                     editarButton.textContent = 'Editar';
                     editarButton.classList.add('edit-button');
                     editarButton.onclick = () => editarProductoFormulario(categoria, producto.id);
                     productElement.appendChild(editarButton);
 
-                    // Add delete button
+                    // Botón para eliminar
                     const eliminarButton = document.createElement('button');
                     eliminarButton.textContent = 'Eliminar';
                     eliminarButton.classList.add('delete-button');
-                    eliminarButton.onclick = () => eliminarProducto(categoria,producto.id);
+                    eliminarButton.onclick = () => eliminarProducto(categoria, producto.id);
                     productElement.appendChild(eliminarButton);
 
                     productsElement.appendChild(productElement);
-
-                    detallesElement.addEventListener('click', () => {
-                        window.open(`/pages/detalles-productos.html?titulo=${encodeURIComponent(producto.titulo)}&descripcion=${encodeURIComponent(producto.descripcion)}&precio=${encodeURIComponent(producto.precio)}&imagen=${encodeURIComponent(producto.imagen)}`);
-                    });
-
                 }
-            
+
                 categoriaElement.appendChild(productsElement);
                 galleryElement.appendChild(categoriaElement);
             }
         }
-    } catch (error) {
-        console.error('Error al obtener los datos:', error);
     }
-}
+});
